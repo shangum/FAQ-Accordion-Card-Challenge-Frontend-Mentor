@@ -1,0 +1,208 @@
+@use 'sass:math';
+
+$font-family: 'Kumbh Sans';
+$font-size: 12px;
+$very-dark-grayish-blue: hsl(237, 12%, 33%);
+$dark-grayish-blue: hsl(240, 6%, 50%);
+$very-dark-desaturated-blue: hsl(238, 29%, 16%);
+$soft-red: hsl(14, 88%, 65%);
+
+$light-grayish-blue: hsl(240, 5%, 91%);
+
+/*Convert pixels to rem*/
+/*use toRem(400px) --> 25rem */
+@function toRem($value) {    
+    @return math.div($value, 16px) * 1rem;
+}
+
+@font-face {
+    font-family: $font-family;
+    src: url('../fonts/KumbhSans-VariableFont_wght.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: $font-family;
+    src: url('../fonts/KumbhSans-VariableFont_wght.ttf');
+    font-weight: 700;
+}
+
+body {
+    font-size: $font-size;
+    font-family: $font-family;    
+    background: rgb(175,103,233);
+    background: linear-gradient(180deg, rgba(175,103,233,1) 0%, rgba(175,103,233,1) 35%, rgba(101,101,231,1) 84%);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+}
+hr{
+    color: $light-grayish-blue;    
+    background-color: $light-grayish-blue;
+    border-width: toRem(0.1px);
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: toRem(20px);
+    margin-left: auto;
+    margin-right: auto;        
+    width: toRem(1000px);
+    margin-top: 10%;
+    height: toRem(502px);
+    position: relative;
+}
+
+.header-faq {    
+    color: $very-dark-desaturated-blue;
+    font-weight: 700;
+    margin-top: 60px;
+    font-size: 3.0em;
+    margin-bottom: toRem(30px);
+}
+
+.accordian-head:hover {
+    color: $soft-red;
+    cursor: pointer;
+}
+
+.accordian-head {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 400;
+    color: $very-dark-desaturated-blue;
+    font-size: 1.2em;
+    margin: toRem(15px) auto toRem(15px) auto;
+}
+
+.accordian-content {
+    color: $dark-grayish-blue;    
+    padding: toRem(0px) toRem(0px) toRem(8px) toRem(0px);
+    font-weight: 400;
+    font-size: 1.2em;
+    overflow: hidden;
+    display: none;
+    line-height: 1.5em;    
+
+}
+
+
+.content-container-body
+{
+    width: toRem(500px);
+}
+
+.content-container-image {
+    background-image: url('../images/bg-pattern-desktop.svg');
+    width: toRem(500px);
+    background-repeat: no-repeat;    
+    background-position: toRem(-570px) toRem(-295px);
+    background-size: cover;
+    overflow: hidden;
+    padding-top: toRem(50px);
+    padding-bottom: toRem(50px);
+    background-size: auto;
+    position: relative;
+}
+
+
+.woman-online {
+    content: url('../images/illustration-woman-online-desktop.svg');
+    margin-left: toRem(-80px);
+}
+
+.box-image {
+    content: url('../images/illustration-box-desktop.svg');
+    position: absolute;    
+    left: toRem(-120px);
+    top: toRem(185px);
+    z-index: 999;
+
+}
+
+.content-body {
+    padding-right: toRem(100px);
+}
+
+
+@media only screen and (min-width: toRem(375px)) and (max-width: toRem(1025px))
+{
+
+    .content-container{        
+        display: flex;
+        flex-direction: column;
+        margin-top: toRem(200px);
+        width: toRem(315px);
+        height: auto;
+    }
+
+    .content-container-image {
+        background-image: url('../images/bg-pattern-mobile.svg');
+        background-repeat: no-repeat;          
+        margin-left: toRem(10px);
+        margin-right: auto;
+        min-height: toRem(125px);
+        background-position: top right;
+        width: auto;
+        overflow: visible;
+        padding-bottom: toRem(0px);
+        
+    }
+
+
+    .woman-online {
+        margin-top: toRem(-110px);
+        content: url('../images/illustration-woman-online-mobile.svg');     
+        margin-left: auto;   
+    }
+
+    .box-image{
+        display: none;
+    }
+
+    .content-body{
+        padding-right: toRem(0px);
+    }
+
+    .header-faq{
+        font-weight: 700;
+        font-size: 3em;
+        text-align: center;
+        margin-top: toRem(0px);        
+    }
+
+    .content-container-body{        
+        padding-left: toRem(25px);
+        padding-right: toRem(25px);
+        padding-bottom: toRem(40px);
+        width: auto;
+    }
+
+    .accordian-head{
+        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: 400;
+        color: $very-dark-desaturated-blue;
+        font-size: 1.1em;
+        margin: toRem(15px) auto toRem(15px) auto;
+    }
+
+    .accordian-content {
+        color: $dark-grayish-blue;        
+        padding: toRem(0px) toRem(0px) toRem(8px) toRem(0px);
+        font-weight: 400;
+        overflow: hidden;
+        display: none;
+        line-height: 1.5em;
+        font-size: 1em;
+
+    }
+    
+
+}
+

@@ -1,0 +1,180 @@
+/*Convert pixels to rem*/
+/*use toRem(400px) --> 25rem */
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/KumbhSans-VariableFont_wght.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/KumbhSans-VariableFont_wght.ttf");
+  font-weight: 700;
+}
+body {
+  font-size: 12px;
+  font-family: "Kumbh Sans";
+  background: #af67e9;
+  background: linear-gradient(180deg, #af67e9 0%, #af67e9 35%, #6565e7 84%);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+hr {
+  color: #e7e7e9;
+  background-color: #e7e7e9;
+  border-width: 0.00625rem;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 62.5rem;
+  margin-top: 10%;
+  height: 31.375rem;
+  position: relative;
+}
+
+.header-faq {
+  color: #1d1e35;
+  font-weight: 700;
+  margin-top: 60px;
+  font-size: 3em;
+  margin-bottom: 1.875rem;
+}
+
+.accordian-head:hover {
+  color: #f47c57;
+  cursor: pointer;
+}
+
+.accordian-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 400;
+  color: #1d1e35;
+  font-size: 1.2em;
+  margin: 0.9375rem auto 0.9375rem auto;
+}
+
+.accordian-content {
+  color: #787887;
+  padding: 0rem 0rem 0.5rem 0rem;
+  font-weight: 400;
+  font-size: 1.2em;
+  overflow: hidden;
+  display: none;
+  line-height: 1.5em;
+}
+
+.content-container-body {
+  width: 31.25rem;
+}
+
+.content-container-image {
+  background-image: url("../images/bg-pattern-desktop.svg");
+  width: 31.25rem;
+  background-repeat: no-repeat;
+  background-position: -35.625rem -18.4375rem;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  background-size: auto;
+  position: relative;
+}
+
+.woman-online {
+  content: url("../images/illustration-woman-online-desktop.svg");
+  margin-left: -5rem;
+}
+
+.box-image {
+  content: url("../images/illustration-box-desktop.svg");
+  position: absolute;
+  left: -7.5rem;
+  top: 11.5625rem;
+  z-index: 999;
+}
+
+.content-body {
+  padding-right: 6.25rem;
+}
+
+@media only screen and (min-width: 23.4375rem) and (max-width: 64.0625rem) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12.5rem;
+    width: 19.6875rem;
+    height: auto;
+  }
+
+  .content-container-image {
+    background-image: url("../images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    margin-left: 0.625rem;
+    margin-right: auto;
+    min-height: 7.8125rem;
+    background-position: top right;
+    width: auto;
+    overflow: visible;
+    padding-bottom: 0rem;
+  }
+
+  .woman-online {
+    margin-top: -6.875rem;
+    content: url("../images/illustration-woman-online-mobile.svg");
+    margin-left: auto;
+  }
+
+  .box-image {
+    display: none;
+  }
+
+  .content-body {
+    padding-right: 0rem;
+  }
+
+  .header-faq {
+    font-weight: 700;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 0rem;
+  }
+
+  .content-container-body {
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
+    padding-bottom: 2.5rem;
+    width: auto;
+  }
+
+  .accordian-head {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 400;
+    color: #1d1e35;
+    font-size: 1.1em;
+    margin: 0.9375rem auto 0.9375rem auto;
+  }
+
+  .accordian-content {
+    color: #787887;
+    padding: 0rem 0rem 0.5rem 0rem;
+    font-weight: 400;
+    overflow: hidden;
+    display: none;
+    line-height: 1.5em;
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
