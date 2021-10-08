@@ -49,7 +49,7 @@ Users should be able to:
 
 ### What I learned
 
-1) How to use css to rotate images: Initially I was looking for the "up arrow" icon in the challenges resource (I'm use to icon packs like font awesome so I was spoiled). I eventually found out that I would have to figure out how to flip the provided image based on the accordian state. During this challenge I discovered the "transform" css rule which I used to rotate the the icon. Very cool trick which I will definetly used in the future.
+1) How to use css to rotate images: Initially I was looking for the "up arrow" icon in the challenges resource (I'm use to icon packs like font awesome so I was spoiled). I eventually found out that I would have to figure out how to flip the provided image based on the accordion state. During this challenge I discovered the "transform" css rule which I used to rotate the the icon. Very cool trick which I will definitely use in the future.
 
 2) How to have images extend beyond their parent element: It was good getting familiar with this design style. I've never worked on a design like this and it was good practice handling overflows and working with negative margins.
 
@@ -69,7 +69,7 @@ In the future I want to continue to use Sass and explore more of the advanced fu
 - [Online Gradient Generator](https://cssgradient.io/) - Useful tool that helped me easily generate a good looking gradient.
 - [Sass pixel to Rems](https://dev.to/nikolab/convert-px-to-rem-using-sass-3-methods-4ep2) - Used to create a Sass function that helped me convert pixels to Rem units easily.
 - [Background Position](https://www.w3schools.com/cssref/pr_background-position.asp) - Helped me to position background images on applied elements.
-- [Flip An Image](https://css-tricks.com/snippets/css/flip-an-image/) - Showed me how to use css to flip images along their axis.
+- [Flip An Image](https://css-tricks.com/snippets/css/flip-an-image/) - This showed me how to use css to flip images along their axis.
 - [Maintaining Position of Elements with Absolute](https://stackoverflow.com/questions/59751166/how-to-keep-element-with-position-absolute-on-the-same-position-when-resizing) - Helped me in figuring out how to have a position absolute element (the box in this case) and keep it in the proper relative position when the screen resizes.
 
 
